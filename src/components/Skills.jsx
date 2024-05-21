@@ -1,32 +1,26 @@
 import React from 'react';
-import { Container, Row, Col, ProgressBar } from 'react-bootstrap';
+import './Skills.css';
 
 function Skills() {
   return (
     <section id="skills" className="skills-section">
-      <Container>
-        <h2 className="text-center">My Skills</h2>
-        <Row>
-          <Col md={6}>
-            <h5>JavaScript</h5>
-            <ProgressBar now={80} label={`${80}%`} />
-          </Col>
-          <Col md={6}>
-            <h5>React</h5>
-            <ProgressBar now={70} label={`${70}%`} />
-          </Col>
-        </Row>
-        <Row>
-          <Col md={6}>
-            <h5>HTML & CSS</h5>
-            <ProgressBar now={90} label={`${90}%`} />
-          </Col>
-          <Col md={6}>
-            <h5>Node.js</h5>
-            <ProgressBar now={60} label={`${60}%`} />
-          </Col>
-        </Row>
-      </Container>
+      <h2 className="text-center">My Skills</h2>
+      <div className="skill-bar">
+        <h5>JavaScript</h5>
+        <div className="skill-bar-fill" style={{ width: '80%' }}></div>
+      </div>
+      <div className="skill-bar">
+        <h5>React</h5>
+        <div className="skill-bar-fill" style={{ width: '70%' }}></div>
+      </div>
+      <div className="skill-bar">
+        <h5>HTML & CSS</h5>
+        <div className="skill-bar-fill" style={{ width: '90%' }}></div>
+      </div>
+      <div className="skill-bar">
+        <h5>Node.js</h5>
+        <div className="skill-bar-fill" style={{ width: '60%' }}></div>
+      </div>
     </section>
   );
 }

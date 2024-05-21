@@ -1,10 +1,10 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-
+import './Header.css';
 
 function Header() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+    <Navbar expand="lg" sticky="top" className="navbar">
       <Container>
         <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
